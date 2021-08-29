@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js" type="module" defer></script>
+  <title>Exam</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card start">
+      <form class="form start-form" action="#">
+        <div class="input-wrap start-input-wrap">
+          <input type="text" class="input start-input" placeholder="הזן שם" name="name">
+        </div>
+        <button class="button start-button" type="submit">המשך</button>
+      </form>
+    </div>
+    <div class="card american-question hide">
+      <p class="card-text">שאלה אמריקאית</p>
+      <form class="form american-form" action="#">
+        <label class="american-container">
+          <input class="american-input" type="radio" name="american-input">
+          <div class="american-checkmark">תשובה 1</div>
+        </label>
+        <label class="american-container">
+          <input class="american-input" type="radio" name="american-input">
+          <div class="american-checkmark">תשובה 2</div>
+        </label>
+        <label class="american-container">
+          <input class="american-input" type="radio" name="american-input">
+          <div class="american-checkmark">תשובה 3</div>
+        </label>
+        <label class="american-container">
+          <input class="american-input" type="radio" name="american-input">
+          <div class="american-checkmark">תשובה 4</div>
+        </label>
+        <button class="button" type="submit">המשך</button>
+      </form>
+    </div>
+    <div class="card complete-question hide">
+      <p class="card-text">השלם את המשפט</p>
+      <form class="form complete-form" action="#">
+        <p class="text complete-text">טקסט<input class="input complete-input" type="text" name="complete">של השאלה</p>
+        <button class="button" type="submit">המשך</button>
+      </form>
+    </div>
+    <div class="card dragndrop-question hide">
+      <p class="card-text">שאלת גרירה</p>
+      <form class="form dragndrop-form" action="#">
+        <div class="row">
+          <div class="img-container placeholder">
+            <img id="4" src="images/img-4.jpg" alt="image-4" class="dragndrop-img" draggable="true">
+          </div>
+          <div class="img-container placeholder">
+            <img id="3" src="images/img-3.jpg" alt="image-3" class="dragndrop-img" draggable="true">
+          </div>
+          <div class="img-container placeholder">
+            <img id="2" src="images/img-2.jpg" alt="image-2" class="dragndrop-img" draggable="true">
+          </div>
+          <div class="img-container placeholder">
+            <img id="1" src="images/img-1.jpg" alt="image-1" class="dragndrop-img" draggable="true">
+          </div>
+        </div>
+        <div id="row-answer" class="row">
+          <div class="img-container placeholder"></div>
+          <div class="img-container placeholder"></div>
+          <div class="img-container placeholder"></div>
+          <div class="img-container placeholder"></div>
+        </div>
+        <input id="dragndropAnswer" type="hidden" value="" />
+        <button class="button" type="submit">המשך</button>
+      </form>
+    </div>
+    <div class="card end hide">
+      <p class="card-text"><span class="user"></span>סיימת את המבחן!</p>
+      <p class="card-text">ענית נכון על<span class="card-text-number">4</span>שאלות מתוך<span
+          class="card-text-number">5</span></p>
+    </div>
+    <div class="progress-bar"></div>
+  </div>
+
+</body>
+
+</html>

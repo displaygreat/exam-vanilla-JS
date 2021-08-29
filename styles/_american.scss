@@ -1,0 +1,32 @@
+.american-container {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+  user-select: none;
+  background-color: $white;
+  border-radius: 3px;
+}
+.american-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.american-checkmark {
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 20px;
+  border: 3px solid $primary;
+  border-radius: 3px;
+}
+.american-container input ~ .american-checkmark {
+  transition: all 0.3s;
+}
+.american-container:hover input ~ .american-checkmark {
+  box-shadow: -1px -1px 10px 2px rgba(84,198,235,0.5);
+}
+.american-container input:checked ~ .american-checkmark {
+  background-color: $secondary;
+}

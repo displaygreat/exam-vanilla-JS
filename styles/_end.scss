@@ -1,0 +1,12 @@
+.card-text-number {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.card-text-number:first-child {
+  background-color: $secondary;
+}
+.card-text-number:last-child {
+  background-color: $primary;
+}
