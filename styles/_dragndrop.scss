@@ -4,15 +4,15 @@
 }
 .img-container {
   width: 23%;
-  height: 100px;
+  height: 200px;
   border-radius: 3px;
   background-color: #fff;
   position: relative;
 }
-.placeholder:not(:last-child):after {
+.placeholder-answer:not(:last-child):after {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 90px;
   left: -15px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent; 
