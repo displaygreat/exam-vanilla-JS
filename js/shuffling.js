@@ -1,6 +1,6 @@
 export const shuffleCards = () => {
   const cardsQuestion = Array.from(document.querySelectorAll(".card-question"));
-  console.dir(cardsQuestion);
+  const questionsWrap = document.querySelector(".questions-wrap");
 
   //Fisher-Yates algorithm
   const shuffle = (array) => {
@@ -15,5 +15,8 @@ export const shuffleCards = () => {
     }
     return array;
   };
-  shuffle(cardsQuestion);
+  const shuffledCards = shuffle(cardsQuestion);
+  shuffledCards.forEach((card) => {
+    questionsWrap.append(card);
+  });
 };

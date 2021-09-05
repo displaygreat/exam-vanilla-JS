@@ -1,6 +1,10 @@
 export const showNextCard = (target) => {
-  const wrapper = target.parentElement;
-  const card = wrapper.parentElement;
+  const cards = document.querySelectorAll(".card");
+  const card = target.closest(".card");
   card.classList.add("hide");
-  card.nextElementSibling.classList.remove("hide");
+  for (let i = 0; i < cards.length; i++) {
+    if (card === cards[i]) {
+      cards[i + 1].classList.remove("hide");
+    }
+  }
 };
