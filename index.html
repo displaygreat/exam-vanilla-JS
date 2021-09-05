@@ -13,82 +13,92 @@
 <body>
   <div class="container">
     <div class="card start">
-      <form class="form start-form" action="#">
-        <div class="input-wrap start-input-wrap">
-          <input type="text" class="input start-input" placeholder="הזן שם" name="name">
-        </div>
-        <button class="button start-button" type="submit">המשך</button>
-      </form>
+      <div class="card-wrap">
+        <form class="form start-form" action="#">
+          <div class="input-wrap start-input-wrap">
+            <input type="text" class="input start-input" placeholder="הזן שם" name="name">
+          </div>
+          <button class="button start-button" type="submit">המשך</button>
+        </form>
+      </div>
     </div>
-    <div class="card american-question hide">
-      <p class="card-text">
-        בחרו את הפירוש המתאים לביטוי המודגש בברכה:<br>
-        "יְהִי רָצוֹן שֶׁנִהְיֶה מְלֵאִים מִצְווֹת כְּרִמוֹן."
-      </p>
-      <form class="form american-form" action="#">
-        <img class="american-image" src="images/pomegranate.png" alt=" רימונים">
-        <label class="american-container">
-          <input class="american-input" type="radio" name="american-input">
-          <div class="american-checkmark">שנקיים את כל מה שאחרים אומרים לנו</div>
-        </label>
-        <label class="american-container">
-          <input class="american-input" type="radio" name="american-input">
-          <div class="american-checkmark">שנעשה מעשים טובים כמספר גרגרי הרימון</div>
-        </label>
-        <label class="american-container">
-          <input class="american-input" type="radio" name="american-input">
-          <div class="american-checkmark">שנזכה לאכול השנה הרבה גרגרי רימון</div>
-        </label>
-        <button class="button" type="submit">המשך</button>
-      </form>
+    <div class="card card-question american-question hide">
+      <div class="card-wrap">
+        <p class="card-text">
+          בחרו את הפירוש המתאים לביטוי המודגש בברכה:<br>
+          "יְהִי רָצוֹן שֶׁנִהְיֶה מְלֵאִים מִצְווֹת כְּרִמוֹן."
+        </p>
+        <form class="form american-form" action="#">
+          <img class="american-image" src="images/pomegranate.png" alt=" רימונים">
+          <label class="american-container">
+            <input class="american-input" type="radio" name="american-input">
+            <div class="american-checkmark">שנקיים את כל מה שאחרים אומרים לנו</div>
+          </label>
+          <label class="american-container">
+            <input class="american-input" type="radio" name="american-input">
+            <div class="american-checkmark">שנעשה מעשים טובים כמספר גרגרי הרימון</div>
+          </label>
+          <label class="american-container">
+            <input class="american-input" type="radio" name="american-input">
+            <div class="american-checkmark">שנזכה לאכול השנה הרבה גרגרי רימון</div>
+          </label>
+          <button class="button" type="submit">המשך</button>
+        </form>
+      </div>
       <div class="progress-bar"></div>
     </div>
-    <div class="card complete-question hide">
-      <p class="card-text">?מי העץ המסתורי</p>
-      <form class="form complete-form" action="#">
-        <img class="complete-image" src="images/almond-tree.png" alt="almond-tree">
-        <p class="text complete-text">
-          שמי מסמל חריצות, מפני שאני מקדים לפרוח לפני עצי הפירות האחרים.<br>
-          מפרותיי מפיקים את המרציפן.‬‬<br>
-          בעל פריחה חגיגית ויפה, המככבת באחד משירי החגים.‬<br>
-          איזה עץ אני?
-          ‬<input class="input complete-input" type="text" name="complete"></p>
-        <button class="button" type="submit">המשך</button>
-      </form>
+    <div class="card card-question complete-question hide">
+      <div class="card-wrap">
+        <p class="card-text">?מי העץ המסתורי</p>
+        <form class="form complete-form" action="#">
+          <img class="complete-image" src="images/almond-tree.png" alt="almond-tree">
+          <p class="text complete-text">
+            שמי מסמל חריצות, מפני שאני מקדים לפרוח לפני עצי הפירות האחרים.<br>
+            מפרותיי מפיקים את המרציפן.‬‬<br>
+            בעל פריחה חגיגית ויפה, המככבת באחד משירי החגים.‬<br>
+            איזה עץ אני?
+            ‬<input class="input complete-input" type="text" name="complete"></p>
+          <button class="button" type="submit">המשך</button>
+        </form>
+      </div>
       <div class="progress-bar"></div>
     </div>
-    <div class="card dragndrop-question hide">
-      <p class="card-text">סדרו את התמונות על פי הסדר.</p>
-      <form class="form dragndrop-form" action="#">
-        <div class="row">
-          <div class="img-container placeholder">
-            <img id="4" src="images/cycle-3.jpg" alt="הצמח פורח" class="dragndrop-img" draggable="true">
+    <div class="card card-question dragndrop-question hide">
+      <div class="card-wrap">
+        <p class="card-text">סדרו את התמונות על פי הסדר.</p>
+        <form class="form dragndrop-form" action="#">
+          <div class="row">
+            <div class="img-container placeholder">
+              <img id="4" src="images/cycle-3.jpg" alt="הצמח פורח" class="dragndrop-img" draggable="true">
+            </div>
+            <div class="img-container placeholder">
+              <img id="3" src="images/cycle-2.jpg" alt="הנבט צומח" class="dragndrop-img" draggable="true">
+            </div>
+            <div class="img-container placeholder">
+              <img id="2" src="images/cycle-1.jpg" alt="הזרה נןבט" class="dragndrop-img" draggable="true">
+            </div>
+            <div class="img-container placeholder">
+              <img id="1" src="images/cycle-4.jpg" alt="פירות הצמח מבשילים" class="dragndrop-img" draggable="true">
+            </div>
           </div>
-          <div class="img-container placeholder">
-            <img id="3" src="images/cycle-2.jpg" alt="הנבט צומח" class="dragndrop-img" draggable="true">
+          <div id="row-answer" class="row">
+            <div class="img-container placeholder placeholder-answer"></div>
+            <div class="img-container placeholder placeholder-answer"></div>
+            <div class="img-container placeholder placeholder-answer"></div>
+            <div class="img-container placeholder placeholder-answer"></div>
           </div>
-          <div class="img-container placeholder">
-            <img id="2" src="images/cycle-1.jpg" alt="הזרה נןבט" class="dragndrop-img" draggable="true">
-          </div>
-          <div class="img-container placeholder">
-            <img id="1" src="images/cycle-4.jpg" alt="פירות הצמח מבשילים" class="dragndrop-img" draggable="true">
-          </div>
-        </div>
-        <div id="row-answer" class="row">
-          <div class="img-container placeholder placeholder-answer"></div>
-          <div class="img-container placeholder placeholder-answer"></div>
-          <div class="img-container placeholder placeholder-answer"></div>
-          <div class="img-container placeholder placeholder-answer"></div>
-        </div>
-        <input id="dragndropAnswer" type="hidden" value="" />
-        <button class="button" type="submit">המשך</button>
-      </form>
+          <input id="dragndropAnswer" type="hidden" value="" />
+          <button class="button" type="submit">המשך</button>
+        </form>
+      </div>
       <div class="progress-bar"></div>
     </div>
     <div class="card end hide">
-      <p class="card-text"><span class="user"></span>סיימת את המבחן!</p>
-      <p class="card-text">ענית נכון על<span class="card-text-number">4</span>שאלות מתוך<span
-          class="card-text-number">5</span></p>
+      <div class="card-wrap">
+        <p class="card-text"><span class="user"></span>סיימת את המבחן!</p>
+        <p class="card-text">ענית נכון על<span class="card-text-number">4</span>שאלות מתוך<span
+            class="card-text-number">5</span></p>
+      </div>
     </div>
   </div>
 
