@@ -1,12 +1,12 @@
-.card-text-number {
+.card-count {
   display: inline-block;
   margin: 0 10px;
   padding: 5px 10px;
   border-radius: 3px;
 }
-.card-text-number:first-child {
+.card-count-right {
   background-color: $secondary;
 }
-.card-text-number:last-child {
+.card-count-total {
   background-color: $primary;
 }
